@@ -1,0 +1,16 @@
+name: "agent-market-regime-monitor"
+display_name: "Market Regime Monitor"
+short_description: "Monitor market regime from Pandadata index, breadth, volatility, and funding evidence."
+default_prompt: "Use agent-market-regime-monitor with Pandadata live evidence and produce reader-facing research materials."
+metadata:
+  organization: "QuantSkills"
+  organization_url: "https://github.com/quantskills"
+  repository: "quantskills/agent-market-regime-monitor"
+  repository_url: "https://github.com/quantskills/agent-market-regime-monitor"
+  project_type: "agent"
+  collection: "pandadata-research-monitor-agents-8"
+  license: "GPL-3.0"
+  category: "monitor-agent"
+  tags: ["market-regime", "monitoring", "a-share", "pandadata"]
+  platforms: ["claude-code", "codex", "openclaw", "cursor"]
+  data_source: "Pandadata"
