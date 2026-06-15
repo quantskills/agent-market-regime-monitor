@@ -1,0 +1,26 @@
+{
+  "agent": "agent-market-regime-monitor",
+  "state": "heat-expansion-watch",
+  "risk_level": "中高关注",
+  "execution_boundary": "research_and_monitoring_only",
+  "rules": [
+    {
+      "id": "agent-market-regime-monitor.upgrade",
+      "severity": "watch_upgrade",
+      "condition": "融资余额、事件热度和承接质量继续同向改善。",
+      "action": "rerun_agent_and_add_to_research_backlog"
+    },
+    {
+      "id": "agent-market-regime-monitor.degrade",
+      "severity": "watch_degrade",
+      "condition": "热度仍高但融资余额回落、波动率升高或承接转弱。",
+      "action": "lower_confidence_and_write_review_note"
+    },
+    {
+      "id": "agent-market-regime-monitor.data_gap",
+      "severity": "data_quality",
+      "condition": "Pandadata 关键表行数低于本 Agent 需要的最低样本数",
+      "action": "stop_and_mark_inconclusive"
+    }
+  ]
+}
