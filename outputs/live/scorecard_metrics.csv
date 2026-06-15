@@ -1,7 +1,7 @@
-metric,value,type,reader_note
-regime,heat-expansion-watch,str,核心状态字段
-lhb_rows,550,int,用于复核本次判断的证据字段
-lhb_mean_change_rate,0.31,float,用于复核本次判断的证据字段
-margin_total_balance_change,0.01,float,用于复核本次判断的证据字段
-underlying_hv,0.15,float,用于复核本次判断的证据字段
-confidence,medium,str,用于复核本次判断的证据字段
+﻿metric,value,type,reader_note
+regime,heat-expansion-watch,str,用于复核本次判断的核心字段
+lhb_rows,550,int,用于复核本次判断的核心字段
+lhb_mean_change_rate,0.3075,float,用于复核本次判断的核心字段
+margin_total_balance_change,0.0091,float,用于复核本次判断的核心字段
+underlying_hv,0.1458,float,用于复核本次判断的核心字段
+confidence,medium,str,用于复核本次判断的核心字段

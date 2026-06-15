@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "agent": "agent-market-regime-monitor",
+  "output_dir": "outputs/live",
+  "data_source": "Pandadata",
+  "tables": {
+    "lhb_list": {
+      "rows": 550,
+      "columns": [
+        "amount",
+        "change_rate",
+        "date",
+        "deviation",
+        "reason",
+        "symbol",
+        "turnover",
+        "type",
+        "volume"
+      ]
+    },
+    "margin": {
+      "rows": 7,
+      "columns": [
+        "buy_on_margin_value",
+        "date",
+        "margin_balance",
+        "margin_type",
+        "short_balance",
+        "symbol",
+        "total_balance"
+      ]
+    },
+    "option_underlying_volatility": {
+      "rows": 1,
+      "columns": [
+        "close",
+        "date",
+        "historical_volatility",
+        "period",
+        "symbol"
+      ]
+    }
+  },
+  "charts": [
+    "charts/funding_balance.png",
+    "charts/event_reason_distribution.png",
+    "charts/scorecard_metrics.png"
+  ],
+  "report": "outputs/live/report.html"
+}

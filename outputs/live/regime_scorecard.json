@@ -2,7 +2,7 @@
   "regime": "heat-expansion-watch",
   "lhb_rows": 550,
   "lhb_mean_change_rate": 0.30747297297297305,
-  "margin_total_balance_change": 0.009069756960689901,
+  "margin_total_balance_change": 0.009069756960689974,
   "underlying_hv": 0.145765,
   "confidence": "medium"
 }
