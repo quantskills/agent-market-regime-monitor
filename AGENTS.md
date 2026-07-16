@@ -41,6 +41,32 @@ quantSkills:
   summary_en: Monitor market regime from Pandadata index, breadth, volatility, and funding evidence.
 ---
 
+```json qsh-form
+{
+  "version": 1,
+  "task": {
+    "placeholder": "补充希望重点判断的市场状态、证据或复核要求（可选）",
+    "required": false
+  },
+  "fields": [
+    {
+      "key": "index",
+      "label": "监控指数",
+      "type": "select",
+      "default": "000300.SH",
+      "options": [
+        { "value": "000300.SH", "label": "沪深300" },
+        { "value": "000001.SH", "label": "上证指数" },
+        { "value": "399006.SZ", "label": "创业板指" },
+        { "value": "000905.SH", "label": "中证500" },
+        { "value": "000852.SH", "label": "中证1000" }
+      ]
+    }
+  ],
+  "prompt_template": "{{#task}}任务与材料：\n{{task}}\n\n{{/task}}{{#attachments}}用户上传的材料（已放入工作区）：\n{{attachments}}\n\n{{/attachments}}以 {{index}} 为核心监控指数，结合趋势、市场宽度、波动率、融资及龙虎榜证据判断当前市场状态，区分基础、升级、降级和证据不足情景，给出失效条件与后续观察清单，不提供交易指令，输出中文报告。"
+}
+```
+
 # Market Regime Monitor
 
 Use this Agent when a user needs a Pandadata-backed research or monitoring answer for:
